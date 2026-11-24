@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b60">
+  <meta name="description" content="Connect with Texas Wagyu producers, promote your operation, and grow the future of the breed with the Texas Wagyu Association.">
+  <title>Texas Wagyu Association | Connect. Promote. Grow.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#102b60;--navy2:#091a3d;--red:#b5123b;--cream:#f5f1e8;--paper:#fffdf8;--gold:#cba866;--ink:#17243c;--muted:#687386;--line:#ded9cd;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--sans);line-height:1.6}a{color:inherit}button{font:inherit}.topline{background:var(--navy2);color:#f4ead5;font-size:11px;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:8px 18px}.topline span{color:var(--gold)}
+    header{position:sticky;top:0;z-index:30;background:rgba(255,253,248,.25);backdrop-filter:blur(12px);border-bottom:1px solid rgba(16,43,96,.1)}.nav{max-width:var(--max);height:84px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;min-width:260px}.brand-mark{width:70px;height:59px;display:grid;place-items:center;background:white;border:1px solid #eee9df;border-radius:11px;overflow:hidden}.brand-mark img{width:100%;height:100%;object-fit:contain}.brand-name{line-height:1.13}.brand-name strong{font-family:var(--serif);font-weight:700;font-size:16px;letter-spacing:.02em;display:block;color:var(--navy)}.brand-name small{display:block;margin-top:5px;color:var(--muted);font-size:9px;letter-spacing:.17em;text-transform:uppercase}.navlinks{display:flex;align-items:center;gap:27px}.navlinks a{text-decoration:none;color:#293751;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:color .2s}.navlinks a:hover{color:var(--red)}.nav-actions{display:flex;align-items:center;gap:10px}.nav-login{font-size:12px;text-decoration:none;font-weight:700;color:var(--navy);padding:10px 12px}.btn{border:0;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 21px;border-radius:3px;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px);background:#99102f}.btn.navy{background:var(--navy)}.btn.navy:hover{background:#071a3e}.btn.outline{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}.btn.outline:hover{background:#fff;color:var(--navy)}.btn.light{background:#fff;color:var(--navy);border:1px solid var(--line)}.btn.light:hover{background:var(--cream)}.menu-toggle{display:none;background:none;border:0;color:var(--navy);font-size:26px;padding:6px}
+    .hero{min-height:610px;background:linear-gradient(90deg,rgba(5,16,39,.86) 0%,rgba(8,22,48,.67) 40%,rgba(8,22,48,.12) 100%),url('assets/texas-wagyu-ranch.png') center 55%/cover;position:relative;color:white;display:flex;align-items:center;overflow:hidden}.hero:after{content:"";position:absolute;inset:auto 0 0;height:95px;background:linear-gradient(transparent,rgba(6,17,37,.38));pointer-events:none}.hero-inner{max-width:var(--max);width:100%;margin:0 auto;padding:78px 34px 102px;position:relative;z-index:1}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.23em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:11px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}.hero h1{font:normal clamp(46px,6vw,76px)/1.02 var(--serif);max-width:680px;margin:22px 0 20px;letter-spacing:-.035em}.hero h1 em{color:#e5c784;font-style:normal}.hero-copy{font-size:16px;max-width:505px;color:rgba(255,255,255,.86);line-height:1.75;margin-bottom:28px}.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}.hero-note{position:absolute;right:5%;bottom:46px;color:#fff;text-transform:uppercase;font-size:9px;letter-spacing:.18em;z-index:2;writing-mode:vertical-rl;opacity:.8}.hero-note:before{content:"";width:1px;height:40px;background:var(--gold);margin:0 auto 12px;display:block}
+    .ticker{background:var(--navy);color:#fff;min-height:82px;display:flex;align-items:center}.ticker-inner{width:min(var(--max),100%);margin:auto;padding:17px 30px;display:grid;grid-template-columns:1.2fr repeat(3,1fr);align-items:center;gap:22px}.ticker-title{font:italic 20px var(--serif);color:#f7e7c3}.ticker-item{border-left:1px solid rgba(255,255,255,.2);padding-left:19px;color:rgba(255,255,255,.86);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.ticker-item b{color:white;display:block;font-size:14px;letter-spacing:.02em}
+    .section{padding:100px 28px}.container{max-width:var(--max);margin:auto}.section-head{max-width:650px;margin-bottom:42px}.section-head.center{text-align:center;margin:0 auto 48px}.section h2{font:normal clamp(34px,4vw,52px)/1.08 var(--serif);letter-spacing:-.025em;color:var(--navy);margin:16px 0 14px}.section-intro{font-size:15px;color:var(--muted);max-width:570px}.benefits{background:var(--cream);position:relative}.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.benefit{background:var(--paper);padding:32px 30px 31px;border:1px solid #e7e0d4;min-height:294px;position:relative;transition:transform .25s,box-shadow .25s}.benefit:hover{transform:translateY(-5px);box-shadow:0 18px 45px #102b6012}.benefit .number{font:italic 15px var(--serif);color:var(--red);letter-spacing:.08em}.benefit h3{font:normal 29px var(--serif);color:var(--navy);margin:21px 0 10px}.benefit p{font-size:14px;color:var(--muted);margin-bottom:21px}.text-link{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;text-decoration:none;color:var(--red);display:inline-flex;align-items:center;gap:10px}.text-link span{font-size:17px;transition:transform .2s}.text-link:hover span{transform:translateX(4px)}
+    .mission{background:var(--navy2);color:#fff;overflow:hidden;position:relative}.mission:after{content:"✦";position:absolute;font-size:420px;color:#ffffff07;right:-40px;top:-165px;line-height:1}.mission-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center;position:relative;z-index:1}.mission-art{min-height:400px;position:relative;display:flex;align-items:center;justify-content:center}.mission-art:before{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(203,168,102,.45);border-radius:50%}.mission-art:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(203,168,102,.3);border-radius:50%}.mission-art img{width:min(80%,300px);position:relative;z-index:1;filter:drop-shadow(0 18px 24px rgba(0,0,0,.28));border-radius:5px}.mission .eyebrow{color:#e3c887}.mission h2{color:#fff;font-size:clamp(36px,4vw,52px)}.mission p{color:rgba(255,255,255,.74);font-size:15px;max-width:510px}.mission-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 32px}.mission-list div{border-top:1px solid rgba(255,255,255,.2);padding:13px 0;color:#fff;font:italic 18px var(--serif)}.mission-list b{font:800 9px var(--sans);display:block;color:var(--gold);letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+    .tools{background:#fff}.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tool-card{border:1px solid var(--line);background:var(--paper);min-height:280px;padding:30px 29px;display:flex;flex-direction:column;align-items:flex-start}.tool-icon{width:46px;height:46px;border:1px solid #d9c69e;border-radius:50%;display:grid;place-items:center;color:var(--red);font-size:19px}.tool-card h3{font:normal 25px var(--serif);color:var(--navy);margin:21px 0 9px}.tool-card p{font-size:13px;color:var(--muted);margin-bottom:21px}.tool-card .text-link{margin-top:auto}
+    .events{background:#f0ede5}.event-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}.event-photo{min-height:390px;background:linear-gradient(0deg,rgba(5,16,39,.35),transparent 62%),url('assets/texas-wagyu-ranch.png') 75% center/cover;position:relative}.event-photo:after{content:"TEXAS";position:absolute;right:20px;bottom:2px;color:#fff;font:italic 65px var(--serif);letter-spacing:.1em;opacity:.75}.event-copy{padding:20px 0}.event-copy p{color:var(--muted);font-size:15px}.event-list{margin:28px 0 30px;border-top:1px solid #d9d2c6}.event-row{display:flex;gap:15px;padding:17px 0;border-bottom:1px solid #d9d2c6;align-items:flex-start}.event-icon{width:33px;height:33px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;flex:none;font-size:14px}.event-row strong{display:block;color:var(--navy);font:normal 18px var(--serif)}.event-row small{color:var(--muted);font-size:12px}
+    .membership{background:var(--navy);color:#fff}.membership .section-head{text-align:center;margin-left:auto;margin-right:auto}.membership .section h2,.membership h2{color:#fff}.membership .section-intro{color:rgba(255,255,255,.72);margin:auto}.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:40px}.plan{background:#fff;color:var(--ink);padding:27px 23px 24px;border-top:4px solid var(--gold);min-height:270px;display:flex;flex-direction:column}.plan.featured{border-color:var(--red);transform:translateY(-8px)}.plan h3{font:normal 23px var(--serif);color:var(--navy);margin:0 0 6px}.plan .price{font:normal 31px var(--serif);color:var(--navy);margin:11px 0 15px}.plan .price small{font:normal 11px var(--sans);color:var(--muted)}.plan p{font-size:12px;color:var(--muted);margin-bottom:20px}.plan .btn{margin-top:auto;width:100%;padding:12px 13px}.member-footnote{text-align:center;font-size:10px;color:rgba(255,255,255,.62);margin:24px auto 0;max-width:800px}
+    .contact{background:var(--cream);padding:82px 28px}.contact-box{max-width:var(--max);margin:auto;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;padding:45px 50px;gap:30px}.contact-box h2{font:normal 39px var(--serif);color:var(--navy);margin:12px 0}.contact-box p{color:var(--muted);margin:0}.contact-info{border-left:1px solid var(--line);padding-left:36px}.contact-info a{display:block;text-decoration:none;color:var(--navy);font-size:15px;font-weight:700;margin:7px 0}.contact-info small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin-top:16px}
+    footer{background:#071a3d;color:#dfe4ec;padding:48px 28px 22px}.footer-main{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:35px}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand .brand-mark{width:60px;height:50px}.footer-brand strong{display:block;font:normal 18px var(--serif);color:#fff}.footer-brand small{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#b9c0cd}.footer-copy{font-size:12px;color:#b9c0cd;max-width:320px;margin:16px 0}.footer-main h4{font-size:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);margin:4px 0 13px}.footer-links{display:grid;gap:8px}.footer-links a{font-size:12px;text-decoration:none;color:#dfe4ec}.footer-links a:hover{color:var(--gold)}.copyright{max-width:var(--max);margin:auto;border-top:1px solid rgba(255,255,255,.14);padding-top:17px;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:#aab3c1}
+    .mobile-panel{display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:1000px){.nav{padding:0 20px}.brand{min-width:auto}.navlinks{gap:17px}.navlinks a{font-size:10px}.nav-login{display:none}.plans{grid-template-columns:repeat(2,1fr)}.plan.featured{transform:none}.mission-grid{gap:40px}}
+    @media(max-width:760px){.topline{font-size:9px}.nav{height:70px}.brand-mark{width:57px;height:49px}.brand-name strong{font-size:14px}.brand-name small{font-size:8px}.navlinks,.nav-actions>.btn{display:none}.menu-toggle{display:block}.mobile-panel{display:none;background:var(--paper);border-top:1px solid var(--line);padding:5px 22px 18px}.mobile-panel.open{display:grid}.mobile-panel a{padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--navy);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.mobile-panel .btn{margin-top:14px;color:#fff;border:0}.hero{min-height:590px;background-position:60% center}.hero-inner{padding:70px 24px 85px}.hero h1{font-size:52px}.hero-copy{font-size:14px}.hero-note{display:none}.ticker-inner{grid-template-columns:1fr 1fr;padding:18px 23px}.ticker-title{grid-column:1/-1}.ticker-item:nth-child(2){border-left:0;padding-left:0}.section{padding:76px 22px}.benefit-grid,.tool-grid{grid-template-columns:1fr}.benefit{min-height:0;padding:27px}.mission-grid,.event-layout{grid-template-columns:1fr;gap:22px}.mission-art{min-height:280px}.mission-art:before{width:250px;height:250px}.mission-art:after{width:200px;height:200px}.mission-art img{width:220px}.mission-list{gap:8px}.mission-list div{font-size:16px}.event-photo{min-height:280px}.event-photo:after{font-size:50px}.plans{grid-template-columns:1fr}.plan{min-height:230px}.contact{padding:58px 20px}.contact-box{grid-template-columns:1fr;padding:30px 24px}.contact-box h2{font-size:32px}.contact-info{border-left:0;border-top:1px solid var(--line);padding:22px 0 0}.footer-main{grid-template-columns:1fr 1fr;gap:30px}.footer-main>div:first-child{grid-column:1/-1}.copyright{flex-direction:column;gap:5px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+  <style>
+    :root{--navy:#1c3444;--navy2:#172833;--red:#b5123b;--cream:#f4f1e9;--paper:#fbfaf6;--gold:#54b1ce;--ink:#2c3032;--muted:#70787a;--line:#deded8;--serif:'DM Serif Display',Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,Helvetica,sans-serif;--sky:#54b1ce}
+    body{color:var(--ink);background:var(--paper);font-family:var(--sans);font-weight:400;line-height:1.65}
+    .topline{background:#1d2d38;color:#e8ecec;font-size:10px;letter-spacing:.18em;padding:7px 18px}.topline span{color:var(--sky)}
+    header{background:rgba(28,45,57,.97);border-bottom:1px solid rgba(255,255,255,.1)}
+    .brand-name strong{color:#f7f5ef}.brand-name small{color:#c3ced0}
+    .navlinks a,.nav-login{color:#f4f5f3}.navlinks a:hover,.nav-login:hover{color:var(--sky)}
+    .menu-toggle{color:#fff}
+    .btn{background:var(--sky);color:#173341;border-radius:999px;padding:14px 23px;letter-spacing:.1em;box-shadow:0 8px 20px rgba(38,120,145,.14)}
+    .btn:hover{background:#72c5dc;color:#102b3a}
+    .btn.navy{background:var(--navy);color:#fff}.btn.navy:hover{background:#284b60}
+    .btn.outline{background:rgba(255,255,255,.18);border:1px solid rgba(30,51,62,.4);color:#24343c;backdrop-filter:blur(8px)}
+    .btn.outline:hover{background:rgba(255,255,255,.78);color:var(--navy)}
+    .btn.light{background:rgba(255,255,255,.72);color:var(--navy);border:1px solid rgba(28,52,68,.14);box-shadow:none}
+    .hero{background:linear-gradient(90deg,rgba(247,245,237,.96) 0%,rgba(247,245,237,.9) 32%,rgba(247,245,237,.54) 56%,rgba(247,245,237,.04) 100%),url('assets/texas-wagyu-association-gathering.png') center 55%/cover;color:var(--ink)}
+    .hero:after{background:linear-gradient(transparent,rgba(18,37,49,.1))}
+    .hero h1{font-family:var(--serif);font-weight:400;color:#242b2c;letter-spacing:-.035em}
+    .hero h1 em{color:#3ea5c2}
+    .hero-copy{color:rgba(36,43,44,.78)}
+    .eyebrow{color:#429fba}.eyebrow:before{background:#429fba}
+    .hero-note{color:#fff}.hero-note:before{background:var(--sky)}
+    .ticker{background:#f1efe8;color:var(--ink);border-bottom:1px solid #e4e1d9}
+    .ticker-title{color:var(--navy)}.ticker-item{color:#727b7d;border-left-color:rgba(28,52,68,.16)}.ticker-item b{color:#293b43}
+    .section h2,.benefit h3,.tool-card h3,.event-row strong,.plan h3,.plan .price,.contact-box h2{font-family:var(--serif);font-weight:400}
+    .section h2{color:#273943}.section-intro,.benefit p,.tool-card p,.event-copy p,.plan p,.contact-box p{color:#70787a}
+    .benefits{background:#eaf4f7}
+    .benefit{background:rgba(255,255,255,.64);border:1px solid rgba(255,255,255,.86);border-radius:16px;backdrop-filter:blur(14px);box-shadow:0 10px 35px rgba(32,59,70,.055)}
+    .benefit:hover{box-shadow:0 18px 45px rgba(32,59,70,.11)}.benefit .number{color:#419fba}
+    .benefit h3{color:#263943}.text-link{color:#348da8}
+    .mission{background:#f7f5ee;color:var(--ink)}
+    .mission:after{content:""}
+    .mission-art:before{width:340px;height:340px;border:1px solid rgba(65,159,186,.25);border-radius:22px;background:rgba(255,255,255,.36);box-shadow:0 20px 55px rgba(37,69,82,.08);transform:rotate(-2deg)}
+    .mission-art:after{display:none}.mission-art img{border-radius:14px;box-shadow:0 12px 35px rgba(27,51,64,.15)}
+    .mission .eyebrow{color:#429fba}.mission h2{color:#273943}.mission p{color:#70787a}
+    .mission-list div{border-color:rgba(28,52,68,.16);color:#28383f}.mission-list b{color:#429fba}
+    .tools{background:#f4f1e9}
+    .tool-card{background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.9);border-radius:16px;backdrop-filter:blur(14px);box-shadow:0 10px 35px rgba(32,59,70,.06)}
+    .tool-card h3{color:#283943}.tool-icon{width:52px;height:52px;border:0;border-radius:0;color:#4a9fb8;font-size:0}
+    .tool-icon svg{width:50px;height:50px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .events{background:#eaf4f7}.event-photo{border-radius:18px;overflow:hidden;box-shadow:0 18px 45px rgba(26,48,58,.12)}
+    .event-list{border-color:rgba(28,52,68,.16)}.event-row{border-color:rgba(28,52,68,.16)}
+    .event-icon{background:rgba(84,177,206,.12);color:#348da8;border:1px solid rgba(84,177,206,.28)}
+    .membership{background:#f4f1e9;color:var(--ink)}.membership .section h2,.membership h2{color:#273943}
+    .membership .section-intro{color:#70787a}.plan{background:rgba(255,255,255,.72);border:1px solid rgba(28,52,68,.1);border-top:3px solid var(--sky);border-radius:15px;box-shadow:0 12px 30px rgba(32,59,70,.06)}
+    .plan.featured{border-color:var(--sky);box-shadow:0 18px 40px rgba(44,126,151,.12)}.plan h3,.plan .price{color:#293b43}
+    .member-footnote{color:#778083}
+    .contact{background:#eaf4f7}.contact-box{background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.9);border-radius:20px;backdrop-filter:blur(16px);box-shadow:0 14px 38px rgba(33,63,75,.08)}
+    .contact-info{border-color:rgba(28,52,68,.15)}.contact-info a{color:#2b5262}
+    footer{background:#1b2d38}.footer-main h4{color:#74c2d7}.footer-links a:hover{color:#74c2d7}
+    .mobile-panel{background:#1c3444}.mobile-panel a{color:#f3f5f3;border-color:rgba(255,255,255,.15)}
+    @media(max-width:760px){.hero{background-image:linear-gradient(90deg,rgba(247,245,237,.94) 0%,rgba(247,245,237,.82) 50%,rgba(247,245,237,.22) 100%),url('assets/texas-wagyu-association-gathering.png');background-position:60% center}.mission-art:before{width:260px;height:260px}.menu-toggle{color:#fff}}
+  </style>
+  <style>
+    :root{--navy:#09225a;--navy2:#071944;--red:#af102c;--gold:#af102c;--sky:#af102c}
+    .topline{background:var(--navy2)}
+    header{background:rgba(9,34,90,.91)}
+    .navlinks a:hover,.nav-login:hover,.topline span{color:var(--red)}
+    .btn{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(175,16,44,.14)}
+    .btn:hover{background:#8e1027;color:#fff}
+    .hero h1 em,.eyebrow,.mission .eyebrow,.benefit .number,.text-link,.mission-list b{color:var(--red)}
+    .eyebrow:before,.hero-note:before{background:var(--red)}
+    .tool-icon{color:var(--navy)}
+    .event-icon{background:rgba(175,16,44,.08);color:var(--red);border:1px solid rgba(175,16,44,.2)}
+    .plan{border-top-color:var(--red)}.plan.featured{border-color:var(--red);box-shadow:0 18px 40px rgba(175,16,44,.12)}
+    footer{background:var(--navy2)}.footer-main h4,.footer-links a:hover{color:var(--red)}
+    .mobile-panel{background:var(--navy)}
+  </style>
+  <style>
+    .hero{min-height:692px}
+    @media(max-width:760px){.hero{min-height:814px}}
+  </style>
+  <style>
+    #benefits.benefits{position:relative;isolation:isolate;background:#e9e5dc}
+    #benefits.benefits:before{content:"";position:absolute;inset:-5px;z-index:-1;background:url('assets/twa-value-cattle.webp') center 48%/cover no-repeat;opacity:.2}
+    #benefits .section-head .eyebrow{color:#f4f1e9}#benefits .section-head .eyebrow:before{background:#f4f1e9}
+    #benefits h2,#benefits .benefit h3{color:#f4f1e9}
+    #benefits .section-intro,#benefits .benefit p{color:#f4f1e9}
+    #benefits .benefit{background:rgba(255,255,255,.56);border:1px solid rgba(255,255,255,.82);backdrop-filter:blur(2px) saturate(125%);-webkit-backdrop-filter:blur(2px) saturate(125%);box-shadow:0 14px 36px rgba(20,38,52,.09),inset 0 1px 0 rgba(255,255,255,.88)}
+    #learn.tools{background:linear-gradient(90deg,rgba(244,241,233,.84) 0%,rgba(244,241,233,.72) 52%,rgba(244,241,233,.76) 100%),url('assets/west-texas-windmill.jpg') center 48%/cover no-repeat}
+    .sponsor-bar{height:92px;display:flex;align-items:center;background:#f4f1e9;border-top:1px solid #e3dfd5;border-bottom:1px solid #e3dfd5;overflow:hidden}
+    .sponsor-label{width:218px;flex:none;padding:0 24px 0 30px;color:#1c3444;font-size:9px;font-weight:800;line-height:1.4;letter-spacing:.13em;text-transform:uppercase;border-right:1px solid rgba(28,52,68,.16)}
+    .sponsor-window{min-width:0;overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+    .sponsor-track{display:flex;width:max-content;animation:sponsor-scroll 64s linear infinite}
+    .sponsor-group{display:flex;align-items:center;gap:32px;flex:none;padding:0 16px}
+    .sponsor-item{width:142px;height:68px;display:flex;align-items:center;justify-content:center;flex:none}
+    .sponsor-item img{display:block;max-width:142px;max-height:58px;width:auto;height:auto;object-fit:contain}
+    .sponsor-bar:hover .sponsor-track{animation-play-state:paused}.sponsor-item:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:5px}
+    @keyframes sponsor-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media(max-width:760px){.sponsor-bar{height:78px}.sponsor-label{width:126px;padding:0 12px 0 18px;font-size:8px;letter-spacing:.08em}.sponsor-group{gap:22px}.sponsor-item{width:108px;height:58px}.sponsor-item img{max-width:108px;max-height:48px}}
+    @media(prefers-reduced-motion:reduce){.sponsor-track{animation:none}}
+  </style>
+  <style>
+    @media (min-width:761px){.hero{background-attachment:fixed}}
+    @media (max-width:760px), (prefers-reduced-motion:reduce){.hero{background-attachment:scroll}}
+  </style>
+
+  <style id="classifieds-mission-preview">
+    .mission{background:#071944;color:#f4f1e9;position:relative;isolation:isolate}.mission:before{content:"";position:absolute;inset:-4px;z-index:0;background:linear-gradient(rgba(7,25,68,.76),rgba(7,25,68,.76)),url("assets/classifieds/classifieds-map-background.webp") center 48%/cover no-repeat;filter:blur(2px);transform:scale(1.01)}
+    .mission-attribution{position:relative;z-index:1;margin:26px auto 0;text-align:center;color:rgba(244,241,233,.82);font-size:15px;letter-spacing:.02em}.mission-attribution a{color:#e3c887;font-weight:800;text-decoration:none}.mission-attribution a:hover{text-decoration:underline;color:#fff}
+    .mission h2{color:#f4f1e9}.mission p{color:rgba(244,241,233,.82)}.mission .eyebrow,.mission-list b{color:#e3c887}.mission-list div{border-color:rgba(244,241,233,.26);color:#f4f1e9}
+    .mission-art{min-height:520px}
+    .mission-grid{gap:54px}.mission-art .classifieds-board{position:relative;z-index:1;width:min(100%,600px);padding:14px;border:1px solid rgba(24,51,63,.13);border-radius:16px;background:#fffdf8;box-shadow:0 22px 50px rgba(3,13,38,.3);transform:rotate(-.3deg)}
+    .classifieds-board-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:1px 2px 8px;color:#09225a;font-size:8px;letter-spacing:.1em}
+    .classifieds-board-head span{border-radius:999px;background:rgba(175,16,44,.1);padding:5px 7px;color:#af102c;font-size:7px;font-weight:800;letter-spacing:.08em}
+    .classifieds-category-row{margin-top:9px}.classifieds-category-row h3{margin:0 0 6px;padding-left:2px;color:#09225a;font-size:10px;line-height:1.15;text-transform:uppercase;letter-spacing:.13em}
+    .classifieds-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+    .mini-listing-link{display:block;min-width:0;border-radius:8px;color:inherit;text-decoration:none}.mini-listing-link:hover .mini-listing{transform:translateY(-2px);box-shadow:0 7px 17px rgba(26,50,50,.13)}.mini-listing-link:focus-visible{outline:3px solid #c4a66d;outline-offset:3px}.mini-listing{min-width:0;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease;border:1px solid #d9dfd9;border-radius:8px;background:#fffdf8;box-shadow:0 3px 9px rgba(26,50,50,.06)}
+    .mini-photo{height:68px;position:relative;overflow:hidden;background:#deded5}.mini-photo>img{display:block;width:100%;height:100%;object-fit:cover}
+    .mini-photo>span{position:absolute;top:4px;left:4px;max-width:calc(100% - 28px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-radius:999px;padding:3px 5px;background:rgba(121,28,31,.92);color:#fff;font-size:6px;font-weight:800;line-height:1.05}
+    .mini-photo>b{position:absolute;right:4px;top:4px;width:22px;height:22px;padding:2px;border:1px solid #fff;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.22)}.mini-photo>b img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}
+    .mini-listing-copy{padding:7px 7px 6px;display:grid;gap:3px;color:#263840}.mini-listing-copy>strong{overflow:hidden;color:#186c4d;font-size:10px;line-height:1.05;white-space:nowrap;text-overflow:ellipsis}.mini-listing-copy>strong small{font-size:7px;color:inherit}.beef-mini .mini-listing-copy>strong{color:#af102c}
+    .mini-listing-copy>span{overflow:hidden;color:#62716d;font-size:7px;font-weight:700;line-height:1.1;white-space:nowrap;text-overflow:ellipsis}.mini-listing-copy>small{overflow:hidden;color:#65736f;font-size:6px;line-height:1.1;white-space:nowrap;text-overflow:ellipsis}
+    .mini-listing-copy footer{display:flex;justify-content:space-between;gap:3px;margin-top:2px;padding:4px 0 0;border-top:1px solid #d7dfd7;background:transparent;color:#9f2630;font-size:6px;font-weight:800;white-space:nowrap}.mini-listing-copy footer b{overflow:hidden;color:#26352e;text-overflow:ellipsis}
+    @media(max-width:760px){.mission-art{min-height:470px}.mission-art .classifieds-board{width:min(100%,440px);padding:8px}.classifieds-mini-grid{gap:5px}.mini-photo{height:43px}.mini-listing-copy{padding:4px 5px}.mini-listing-copy>strong{font-size:8px}}
+  </style>
+  <style id="brand-system-polish">
+    :root{--navy:#09225a;--navy2:#071944;--red:#af102c;--cream:#f4f1e9;--paper:#fffdf8;--gold:#c4a66d;--ink:#263746;--muted:#68747a;--line:#e1ddd4}
+    body{background:var(--paper);color:var(--ink)}
+    header{background:rgba(9,34,90,.84);border-bottom-color:rgba(255,255,255,.14);box-shadow:0 8px 24px rgba(7,25,68,.08)}
+    .navlinks a:hover,.nav-login:hover{color:#e3c887}
+    .topline{background:var(--navy2)}
+    .ticker{background:var(--cream);border-block:1px solid var(--line)}
+    .ticker-item{border-left-color:rgba(9,34,90,.17)}
+    .section{padding-block:88px}
+    .section-head{margin-bottom:36px}
+    .section-head.center{margin-bottom:42px}
+    .section h2{color:var(--navy)}
+    #about .mission-grid>div:last-child h2{color:#e3c887}
+    .eyebrow,.mission .eyebrow{color:var(--red)}
+    .eyebrow:before{background:var(--red)}
+    .benefits{background:#e9e5dc}
+    #benefits.benefits:before{background:url('assets/twa-value-cattle.webp') center 48%/cover no-repeat;opacity:.2}
+    #benefits.benefits:after{content:"";position:absolute;inset:-5px;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(32,32,32,.80) 0%,rgba(32,32,32,.75) 32%,rgba(32,32,32,.45) 56%,rgba(32,32,32,.03) 100%)}
+    #benefits .benefit{border-radius:18px;background:rgba(0,0,0,.2);border-color:rgba(255,255,255,.48);box-shadow:0 14px 34px rgba(9,34,90,.16),inset 0 1px 0 rgba(255,255,255,.18)}
+    #benefits .benefit:hover{box-shadow:0 20px 42px rgba(9,34,90,.13)}
+    .benefit .number,.text-link{color:var(--red)}
+    #benefits .benefit .number,#benefits .benefit h3,#benefits .benefit p,#benefits .benefit .text-link{color:#f4f1e9}
+    .benefit h3,.tool-card h3{color:var(--navy)}
+    .mission{background:var(--navy2)}
+    .mission .eyebrow,.mission-list b{color:#e3c887}
+    .mission .eyebrow:before{background:#e3c887}
+    .mission-art:before{border-color:rgba(196,166,109,.38)}
+    .mission-list div{border-color:rgba(255,253,248,.22)}
+    #learn.tools{background:linear-gradient(90deg,rgba(244,241,233,.88),rgba(244,241,233,.78) 52%,rgba(244,241,233,.84)),url('assets/west-texas-windmill.jpg') center 48%/cover no-repeat}
+    .tool-card{border-radius:18px;background:rgba(255,253,248,.82);border-color:rgba(255,255,255,.92);box-shadow:0 12px 30px rgba(9,34,90,.07)}
+    .tool-icon{color:var(--red)}
+    .events{background:#eeebe3}
+    .event-photo{border-radius:18px}
+    .event-icon{background:rgba(9,34,90,.07);color:var(--navy);border-color:rgba(9,34,90,.16)}
+    .membership{background:var(--navy2);color:#fff}
+    .membership h2{color:#fff}
+    .membership .section-intro{color:rgba(255,255,255,.77)}
+    .plan{border-radius:16px;background:var(--paper);border:1px solid rgba(255,255,255,.22);border-top:3px solid var(--gold);box-shadow:0 12px 30px rgba(0,0,0,.1)}
+    .plan.featured{border-color:var(--red);box-shadow:0 18px 40px rgba(0,0,0,.18)}
+    .member-footnote{color:rgba(255,255,255,.68)}
+    .contact{background:var(--cream)}
+    .contact-box{border-radius:18px;background:var(--paper);border-color:var(--line);box-shadow:0 12px 32px rgba(9,34,90,.06)}
+    .sponsor-bar{background:var(--cream);border-color:var(--line)}
+    .sponsor-label{color:var(--navy)}
+    footer{background:var(--navy2)}
+    .footer-main h4,.footer-links a:hover{color:#e3c887}
+    .mobile-panel{background:var(--navy2)}
+    @media(max-width:760px){.section{padding-block:68px}.membership{padding-block:72px}.menu-toggle{color:#fff}}
+  </style>
+  <style id="mission-matching-value-style">
+    #about.mission{position:relative;isolation:isolate;background:#202020}
+    #about.mission:before{content:"";position:absolute;inset:-4px;z-index:0;background:url("assets/classifieds/classifieds-map-background.webp") center 48%/cover no-repeat;opacity:.2;filter:grayscale(100%) blur(2px);transform:scale(1.01)}
+    #about.mission:after{content:"";position:absolute;inset:-4px;z-index:0;pointer-events:none;background:linear-gradient(270deg,rgba(4,17,47,.80) 0%,rgba(4,17,47,.75) 32%,rgba(4,17,47,.45) 56%,rgba(4,17,47,.03) 100%)}
+  </style>
+<style id="twa-fresh-identity">
+
+:root{--navy:#09225a;--navy2:#071944;--red:#af102c;--cream:#f4f1e9;--paper:#fffdf8;--ink:#202b35;--muted:#66727a;--line:#e2ded5;--gold:#c4a66d;--serif:'DM Serif Display',Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,Helvetica,sans-serif;--max:1180px}
+html{scroll-padding-top:88px}body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
+.topline{background:var(--navy2);color:rgba(255,253,248,.8);padding:7px 18px;font-size:10px;letter-spacing:.17em}
+header{background:rgba(7,25,68,.92);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.brand-mark{background:#fff;border:1px solid rgba(255,255,255,.55);border-radius:10px;box-shadow:0 5px 18px rgba(0,0,0,.12)}
+.brand-name strong{color:#fff}.brand-name small{color:rgba(255,255,255,.68)}
+.navlinks a,.nav-login{color:rgba(255,255,255,.9)}.navlinks a:hover,.nav-login:hover{color:#fff}
+.menu-toggle{color:#fff}.btn{background:var(--red);color:#fff;border-radius:999px;box-shadow:0 8px 22px rgba(175,16,44,.16)}.btn:hover{background:#8e1027;color:#fff}
+.btn.navy{background:var(--navy);color:#fff}.btn.outline{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.6);color:#fff}
+.hero{min-height:660px;background:linear-gradient(90deg,rgba(7,25,68,.9) 0%,rgba(7,25,68,.68) 44%,rgba(7,25,68,.16) 100%),url('assets/texas-wagyu-association-gathering.png') center 55%/cover no-repeat;color:#fff}
+.hero:after{background:linear-gradient(transparent,rgba(7,25,68,.42))}
+.hero h1{font-family:var(--serif);font-weight:400;color:#fff;max-width:760px}
+.hero h1 em{color:#f4f1e9;font-style:italic}.hero-copy{color:rgba(255,255,255,.82);font-size:17px}
+.eyebrow{color:#e3c887}.eyebrow:before{background:var(--red)}
+.hero-note{color:rgba(255,255,255,.84)}.hero-note:before{background:var(--red)}
+.hero .btn{min-height:48px;padding-inline:26px}.hero .btn.outline{box-shadow:none}
+.ticker{background:var(--cream);color:var(--ink);border-block:1px solid var(--line)}
+.ticker-title{color:var(--navy)}.ticker-item{color:#647078;border-left-color:rgba(9,34,90,.16)}.ticker-item b{color:var(--navy)}
+.sponsor-bar{background:var(--cream);border-color:var(--line)}.sponsor-label{color:var(--navy)}.sponsor-item img{mix-blend-mode:multiply}
+.section{padding-block:92px}.section h2{color:var(--navy);font-family:var(--serif);font-weight:400}
+.section-head .eyebrow{color:var(--red)}.section-head .eyebrow:before{background:var(--red)}
+.section-intro{color:var(--muted);font-size:16px}
+#benefits.benefits{position:relative;isolation:auto;background:var(--cream)}
+#benefits.benefits:before,#benefits.benefits:after{content:none!important}
+#benefits h2{color:var(--navy)}#benefits .section-intro{color:var(--muted)}
+.benefit-grid{gap:20px}
+#benefits .benefit{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:16px;padding:30px 28px;min-height:300px;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 12px 28px rgba(7,25,68,.055);transition:transform .2s,box-shadow .2s}
+#benefits .benefit:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(7,25,68,.11)}
+#benefits .benefit .number{color:var(--red);font-size:12px;font-weight:800;letter-spacing:.16em}
+#benefits .benefit h3{color:var(--navy);font-family:var(--serif);font-size:29px;line-height:1.15;margin:22px 0 12px}
+#benefits .benefit p{color:var(--muted);font-size:14px;line-height:1.7}
+#benefits .benefit .text-link{color:var(--red);margin-top:4px}
+#about.mission{background:var(--navy2);color:#f4f1e9}
+#about.mission:before{content:"";inset:-4px;z-index:0;background:linear-gradient(90deg,rgba(7,25,68,.9),rgba(7,25,68,.7) 55%,rgba(7,25,68,.86)),url('assets/classifieds/classifieds-map-background.webp') center 48%/cover no-repeat;filter:grayscale(1);opacity:.35;transform:scale(1.01)}
+#about.mission:after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(9,34,90,.88),rgba(9,34,90,.68) 58%,rgba(9,34,90,.78));pointer-events:none}
+#about .mission-grid{z-index:1}#about.mission .eyebrow{color:#e3c887}#about.mission .eyebrow:before{background:var(--red)}
+#about.mission h2{color:#fff}#about.mission p{color:rgba(255,255,255,.8)}#about .mission-list div{color:#fff;border-color:rgba(255,255,255,.24)}#about .mission-list b{color:#e3c887}
+#about .mission-art .classifieds-board{border:1px solid rgba(255,255,255,.7);border-radius:18px;box-shadow:0 24px 58px rgba(0,0,0,.24)}
+.mission-attribution{color:rgba(255,255,255,.78)}.mission-attribution a{color:#e3c887}
+#learn.tools{background:#fffdf8}
+.tool-grid{gap:18px}.tool-card{background:var(--cream);border:1px solid var(--line);border-radius:15px;box-shadow:0 9px 24px rgba(7,25,68,.04);backdrop-filter:none;min-height:270px}
+.tool-card h3{color:var(--navy)}.tool-card p{color:var(--muted)}.tool-icon{color:var(--red);border-color:rgba(175,16,44,.24)}
+.events{background:var(--cream)}.event-photo{border-radius:16px;box-shadow:0 20px 42px rgba(7,25,68,.12)}
+.event-copy p{color:var(--muted)}.event-list,.event-row{border-color:var(--line)}.event-row strong{color:var(--navy)}.event-icon{background:var(--red);color:#fff;border:0}
+.membership{background:var(--navy2);color:#fff}.membership h2{color:#fff}.membership .section-intro{color:rgba(255,255,255,.75)}
+.plan{background:var(--paper);border:1px solid rgba(255,255,255,.18);border-top:3px solid var(--red);border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.14)}.plan h3,.plan .price{color:var(--navy)}.plan.featured{border-color:var(--red)}
+.contact{background:var(--cream)}.contact-box{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 16px 40px rgba(7,25,68,.07);backdrop-filter:none}
+.contact-box h2{color:var(--navy)}.contact-box p{color:var(--muted)}.contact-info{border-color:var(--line)}
+footer{background:var(--navy2)}.footer-main h4{color:#e3c887}.footer-links a:hover{color:#fff}
+@media(max-width:900px){.ticker-inner{grid-template-columns:1fr 1fr}.benefit-grid,.tool-grid{grid-template-columns:1fr 1fr}.plan{min-height:250px}}
+@media(max-width:760px){.hero{min-height:620px;background-position:58% center}.hero-inner{padding:70px 22px 90px}.section{padding-block:70px}.benefit-grid,.tool-grid{grid-template-columns:1fr}#benefits .benefit{min-height:0}.mission-grid{gap:42px}.mission-art{min-height:380px}.event-layout{gap:28px}}
+@media(max-width:560px){.hero{min-height:610px}.hero h1{font-size:clamp(42px,12vw,58px)}.hero-copy{font-size:15px}.ticker-inner{grid-template-columns:1fr 1fr;gap:14px}.ticker-title{grid-column:1/-1}.event-layout{grid-template-columns:1fr}.event-photo{min-height:280px}.footer-main{grid-template-columns:1fr}.footer-main>div:first-child{grid-column:auto}}
+
+</style>
+<style id="home-storefront-style">
+.home-storefront{background:#09225a;color:#f4f1e9;padding:78px 28px 68px;overflow:hidden}.storefront-inner{max-width:1180px;margin:0 auto}.storefront-intro{display:flex;justify-content:space-between;align-items:end;gap:30px;margin:0 0 34px}.storefront-intro .eyebrow{color:#e3c887}.storefront-intro h2{margin:7px 0 0;color:#f4f1e9;font:700 clamp(32px,4vw,48px)/1.08 var(--sans);letter-spacing:-.045em}.storefront-intro p{max-width:550px;margin:0;color:rgba(244,241,233,.8);font-size:14px;line-height:1.65}.store-category{margin:0 0 45px}.store-category-head{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:0 0 19px}.store-category-head h3{margin:0;color:#f4f1e9;font:700 clamp(28px,3vw,40px)/1 var(--sans);letter-spacing:-.04em}.store-category-head>a{color:#e3c887;font-size:14px;font-weight:800;text-decoration:none}.store-category-head>a span{font-size:21px;vertical-align:-1px}.store-category-head>a:hover{text-decoration:underline}.store-listings{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.store-listing-link{display:block;min-width:0;color:inherit;text-decoration:none;border-radius:22px}.store-listing{height:100%;overflow:hidden;border:1px solid #dfe2d8;border-radius:22px;background:#fffdf8;box-shadow:0 10px 24px rgba(37,49,38,.08);transition:transform .18s ease,box-shadow .18s ease}.store-listing-link:hover .store-listing{transform:translateY(-3px);box-shadow:0 16px 30px rgba(37,49,38,.14)}.store-listing-link:focus-visible{outline:3px solid #c4a66d;outline-offset:4px}.store-card-media{height:clamp(145px,16vw,235px);position:relative;overflow:hidden;background:#e3e2d8}.store-card-media>img{display:block;width:100%;height:100%;object-fit:cover}.store-sample,.store-new{position:absolute;left:13px;padding:6px 11px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}.store-sample{top:13px;background:#f4b51b;color:#242319}.store-new{bottom:12px;background:#18724f;color:white}.store-twa-mark{position:absolute;right:12px;top:12px;width:43px;height:43px;padding:4px;border:2px solid #fff;border-radius:50%;background:#fff;box-shadow:0 3px 10px #0003}.store-twa-mark img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}.store-card-body{padding:14px 16px 0}.store-price{color:#176c4b;font-size:22px;font-weight:900;letter-spacing:-.04em;line-height:1.15}.beef-listing .store-price{color:#c83235}.store-price small{font-size:11px;letter-spacing:0}.store-card-body>p{min-height:44px;margin:10px 0 5px;color:#6a7870;font-size:15px;line-height:1.4}.store-location{display:block;color:#617168;font-size:12px}.store-card-footer{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:13px -16px 0;padding:11px 16px;border-top:1px solid #d9dfd7;font-size:12px}.store-card-footer strong{overflow:hidden;color:#184532;text-overflow:ellipsis;white-space:nowrap}.beef-listing .store-card-footer strong{color:#a82127}.store-card-footer b{color:#242d27;white-space:nowrap}.storefront-actions{text-align:center;margin:8px auto 0}.store-search{display:inline-flex;align-items:center;gap:12px;padding:14px 21px;border-radius:5px;background:#af102c;color:white;font-size:11px;font-weight:900;letter-spacing:.08em;text-decoration:none;text-transform:uppercase}.store-search:hover{background:#8e0c22}.store-powered{margin:24px auto 0;text-align:center;color:rgba(244,241,233,.76);font-size:13px}.store-powered a{color:#e3c887;font-weight:800;text-decoration:none}.store-powered a:hover{text-decoration:underline}
+@media(max-width:1000px){.store-listings{grid-template-columns:repeat(2,minmax(0,1fr))}.store-card-media{height:220px}}@media(max-width:650px){.home-storefront{padding:58px 18px}.storefront-intro{display:block;margin-bottom:27px}.storefront-intro p{margin-top:12px;font-size:13px}.store-category{margin-bottom:34px}.store-category-head{margin-bottom:14px}.store-listings{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(255px,82vw);grid-template-columns:none;overflow-x:auto;gap:14px;padding:0 2px 14px;scroll-snap-type:x mandatory;overscroll-behavior-x:contain}.store-listing-link{scroll-snap-align:start}.store-card-media{height:210px}.store-card-body>p{min-height:42px}}
+</style>
+<style id="home-events-list-style">
+#events .event-home{max-width:1180px}.event-home-head{max-width:760px;margin:0 auto 30px;text-align:center}.event-home-head .eyebrow{color:#af102c}.event-home-head h2{margin:13px 0;color:var(--navy);font:normal clamp(34px,4vw,52px)/1.08 var(--serif)}.event-home-head p{max-width:620px;margin:0 auto;color:var(--muted);font-size:15px}.event-agenda{max-width:980px;margin:0 auto 28px;border-top:1px solid #d9d2c6}.agenda-row{display:grid;grid-template-columns:74px 1fr 28px;gap:20px;align-items:center;padding:19px 18px;border-bottom:1px solid #d9d2c6;color:inherit;text-decoration:none;transition:background .18s ease,transform .18s ease}.agenda-row:hover{background:rgba(255,255,255,.6);transform:translateX(3px)}.agenda-row:focus-visible{outline:3px solid var(--gold);outline-offset:2px}.agenda-date{display:flex;align-items:center;justify-content:center;gap:8px;width:70px;height:66px;border-radius:6px;background:var(--navy);color:#fff}.agenda-date b{font:700 29px/1 var(--sans)}.agenda-date small{font-size:8px;font-weight:800;line-height:1.25;letter-spacing:.1em}.agenda-details{display:grid;gap:4px}.agenda-type{color:var(--red);font-size:8px;font-weight:900;letter-spacing:.16em}.agenda-details strong{color:var(--navy);font:normal 21px/1.2 var(--serif)}.agenda-details>small:last-child{color:var(--muted);font-size:12px}.agenda-arrow{color:var(--red);font-size:24px;text-align:center}#events>.container>.btn{display:flex;width:max-content;margin:0 auto}
+@media(max-width:600px){.event-home-head{text-align:left}.event-home-head p{margin:0}.agenda-row{grid-template-columns:60px 1fr 18px;gap:12px;padding:16px 8px}.agenda-date{width:58px;height:60px;gap:5px}.agenda-date b{font-size:25px}.agenda-date small{font-size:7px}.agenda-details strong{font-size:17px}.agenda-details>small:last-child{font-size:11px}.agenda-arrow{font-size:20px}}
+</style>
+</head>
+<body>
+  <div class="topline"><span>Texas Wagyu Association</span> &nbsp;•&nbsp; Raising Wagyu excellence since 2009</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Texas Wagyu Association home">
+        <span class="brand-mark"><img src="assets/twa-texas-logo.png" alt="Texas outline with a Wagyu bull"></span>
+        <span class="brand-name"><strong>Texas Wagyu<br>Association</strong><small>Connect · Promote · Grow</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#about">About TWA</a><a href="#benefits">Member benefits</a><a href="#events">Events</a><a href="#learn">Learn</a>
+      </div>
+      <div class="nav-actions"><a class="nav-login" href="member-login.html">Member login</a><a class="btn" href="#membership">Join TWA <span aria-hidden="true">&gt;</span></a></div>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </nav>
+    <div class="mobile-panel" id="mobile-menu"><a href="#about">About TWA</a><a href="#benefits">Member benefits</a><a href="#events">Events</a><a href="#learn">Learn</a><a href="member-directory.html">Member directory</a><a href="member-login.html">Member login</a><a class="btn" href="#membership">Join TWA&nbsp; &gt;</a></div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="eyebrow">One breed. A stronger community.</div>
+        <h1 id="hero-title">Where the Wagyu community <em>comes together.</em></h1>
+        <p class="hero-copy">Connect with producers nationwide, share your cattle and operation, and find new opportunities—online and in person.</p>
+        <div class="hero-ctas"><a class="btn" href="#membership">Become a member <span aria-hidden="true">&gt;</span></a></div>
+      </div>
+      <div class="hero-note">Texas Wagyu · Since 2009</div>
+    </section>
+    <section class="sponsor-bar" aria-label="Thank you to the Annual General Meeting and Big Texas Sale event sponsors">
+      <div class="sponsor-label">Thank you to our event sponsors</div>
+      <div class="sponsor-window">
+        <div class="sponsor-track">
+          <div class="sponsor-group">
+            <a class="sponsor-item" href="https://vytelle.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Vytelle"><img src="assets/sponsors/logo-01.png" alt="Vytelle"></a>
+            <a class="sponsor-item" href="https://www.wagyu.org.au/" target="_blank" rel="noopener noreferrer" aria-label="Visit Australian Wagyu Association"><img src="assets/sponsors/logo-02.png" alt="Australian Wagyu Association"></a>
+            <a class="sponsor-item" href="https://morganlivestockequip.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Morgan Livestock Equipment"><img src="assets/sponsors/logo-03.png" alt="Morgan Livestock Equipment"></a>
+            <a class="sponsor-item" href="https://ranch-bot.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ranch Bot"><img src="assets/sponsors/logo-04.png" alt="Ranch Bot"></a>
+            <a class="sponsor-item" href="https://herdyard.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Herd Yard"><img src="assets/sponsors/logo-05.png" alt="Herd Yard"></a>
+            <a class="sponsor-item" href="https://meatworks.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Meatworks"><img src="assets/sponsors/logo-06.png" alt="Meatworks"></a>
+            <a class="sponsor-item" href="https://milburnamericanwagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Milburn American Wagyu"><img src="assets/sponsors/logo-07.png" alt="Milburn American Wagyu"></a>
+            <a class="sponsor-item" href="https://bransonwagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Branson Wagyu"><img src="assets/sponsors/logo-08.png" alt="Branson Wagyu"></a>
+            <a class="sponsor-item" href="https://santospatronosranch.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Santos Patronos Ranch"><img src="assets/sponsors/logo-09.png" alt="Santos Patronos Ranch"></a>
+            <a class="sponsor-item" href="https://renewlivestockcompany.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit RLC"><img src="assets/sponsors/logo-10.png" alt="RLC"></a>
+            <a class="sponsor-item" href="https://texaswagyu.org/2026-agm/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Big Texas"><img src="assets/sponsors/logo-11.png" alt="The Big Texas"></a>
+            <a class="sponsor-item" href="https://agrilifeextension.tamu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Visit Texas A&M AgriLife Extension"><img src="assets/sponsors/logo-12.png" alt="Texas A&M AgriLife Extension"></a>
+            <a class="sponsor-item" href="https://fushimisakewagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fushimisake Wagyu Cattle"><img src="assets/sponsors/logo-13.png" alt="Fushimisake Wagyu Cattle"></a>
+            <a class="sponsor-item" href="https://texasagriculture.gov/" target="_blank" rel="noopener noreferrer" aria-label="Visit Texas Department of Agriculture"><img src="assets/sponsors/logo-14.png" alt="Texas Department of Agriculture"></a>
+            <a class="sponsor-item" href="https://rotogrind.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Roto Grind"><img src="assets/sponsors/logo-15.png" alt="Roto Grind"></a>
+            <a class="sponsor-item" href="https://synergywagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Synergy Wagyu"><img src="assets/sponsors/logo-16.png" alt="Synergy Wagyu"></a>
+          </div>
+          <div class="sponsor-group" aria-hidden="true">
+            <a class="sponsor-item" href="https://vytelle.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Vytelle"><img src="assets/sponsors/logo-01.png" alt=""></a>
+            <a class="sponsor-item" href="https://www.wagyu.org.au/" target="_blank" rel="noopener noreferrer" aria-label="Visit Australian Wagyu Association"><img src="assets/sponsors/logo-02.png" alt=""></a>
+            <a class="sponsor-item" href="https://morganlivestockequip.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Morgan Livestock Equipment"><img src="assets/sponsors/logo-03.png" alt=""></a>
+            <a class="sponsor-item" href="https://ranch-bot.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ranchbot"><img src="assets/sponsors/logo-04.png" alt=""></a>
+            <a class="sponsor-item" href="https://herdyard.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Herd Yard"><img src="assets/sponsors/logo-05.png" alt=""></a>
+            <a class="sponsor-item" href="https://meatworks.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit MeatWorks"><img src="assets/sponsors/logo-06.png" alt=""></a>
+            <a class="sponsor-item" href="https://milburnamericanwagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Milburn American Wagyu"><img src="assets/sponsors/logo-07.png" alt=""></a>
+            <a class="sponsor-item" href="https://bransonwagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Branson Wagyu"><img src="assets/sponsors/logo-08.png" alt=""></a>
+            <a class="sponsor-item" href="https://santospatronosranch.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Santos Patronos Ranch"><img src="assets/sponsors/logo-09.png" alt=""></a>
+            <a class="sponsor-item" href="https://renewlivestockcompany.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Renew Livestock Company"><img src="assets/sponsors/logo-10.png" alt=""></a>
+            <a class="sponsor-item" href="https://texaswagyu.org/2026-agm/" target="_blank" rel="noopener noreferrer" aria-label="Visit The Big Texas Sale"><img src="assets/sponsors/logo-11.png" alt=""></a>
+            <a class="sponsor-item" href="https://agrilifeextension.tamu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Visit Texas A&M AgriLife Extension"><img src="assets/sponsors/logo-12.png" alt=""></a>
+            <a class="sponsor-item" href="https://fushimisakewagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fushimisake Wagyu Cattle"><img src="assets/sponsors/logo-13.png" alt=""></a>
+            <a class="sponsor-item" href="https://texasagriculture.gov/" target="_blank" rel="noopener noreferrer" aria-label="Visit Texas Department of Agriculture"><img src="assets/sponsors/logo-14.png" alt=""></a>
+            <a class="sponsor-item" href="https://rotogrind.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Roto Grind"><img src="assets/sponsors/logo-15.png" alt=""></a>
+            <a class="sponsor-item" href="https://synergywagyu.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Synergy Wagyu"><img src="assets/sponsors/logo-16.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section benefits" id="benefits">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">The value of being here</div><h2>For the producers behind the breed.</h2><p class="section-intro">TWA brings producers and the wider Wagyu community closer to the relationships, visibility, and knowledge that move the industry forward.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit"><div class="number">01 / CONNECT</div><h3>Find a member</h3><p>Meet breeders, ranchers, buyers, and industry professionals through a shared community, member directory, and face-to-face gatherings.</p><a class="text-link" href="member-directory.html">Explore the directory <span>&gt;</span></a></article>
+          <article class="benefit"><div class="number">02 / PROMOTE</div><h3>Member Events &amp; Sales</h3><p>Find member cattle sales, ranch events, field days, and open houses—or share an upcoming opportunity of your own.</p><a class="text-link" href="member-events-sales.html">Browse Event &amp; Sales <span>&gt;</span></a></article>
+          <article class="benefit"><div class="number">03 / GROW</div><h3>TWA Events &amp; Sales</h3><p>Join TWA events to meet producers, buyers, and industry partners in person and build connections across the Wagyu community.</p><a class="text-link" href="events.html">TWA Events <span>&gt;</span></a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section home-storefront" id="about"><div class="storefront-inner"><div class="storefront-intro"><div><div class="eyebrow">Find cattle through TWA</div><h2>Browse the marketplace.</h2></div><p>Explore cattle, beef, and genetics listings from Wagyu producers. These sample cards show how offers appear in the TWA classifieds.</p></div><div class="store-category"><div class="store-category-head"><h3>Cattle</h3><a href="classifieds.html#cattle">See all <span aria-hidden="true">→</span></a></div><div class="store-listings"><a class="store-listing-link" href="classifieds.html#cattle" aria-label="Browse cattle classifieds: 1 | Wagyu | Open Heifer"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/cattle-01.webp" alt="Wagyu cattle in pasture" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$5,500<small> / hd</small></div><p>1 | Wagyu | Open Heifer</p><small class="store-location">⌖ Waxahachie, TX</small><div class="store-card-footer"><strong>Example Ranch 01</strong><b>Lot 1624</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#cattle" aria-label="Browse cattle classifieds: 1 | Wagyu | Bred Heifer"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/cattle-02.webp" alt="Wagyu bred heifer in pasture" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$5,500<small> / hd</small></div><p>1 | Wagyu | Bred Heifer</p><small class="store-location">⌖ College Station, TX</small><div class="store-card-footer"><strong>Example Ranch 02</strong><b>Lot 1642</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#cattle" aria-label="Browse cattle classifieds: 1 | Wagyu | Cow/Calf Pair"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/cattle-03.webp" alt="Wagyu cow and calf in pasture" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$8,500<small> / pair</small></div><p>1 | Wagyu | Cow/Calf Pair</p><small class="store-location">⌖ Gonzales, TX</small><div class="store-card-footer"><strong>Example Ranch 03</strong><b>Lot 1903</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#cattle" aria-label="Browse cattle classifieds: 1 | Wagyu | Yearling Heifer"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/cattle-01.webp" alt="Wagyu heifer in pasture" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$4,800<small> / hd</small></div><p>1 | Wagyu | Yearling Heifer</p><small class="store-location">⌖ Wimberley, TX</small><div class="store-card-footer"><strong>Example Ranch 04</strong><b>Lot 2041</b></div></div></article></a></div></div><div class="store-category"><div class="store-category-head"><h3>Beef</h3><a href="classifieds.html#beef">See all <span aria-hidden="true">→</span></a></div><div class="store-listings"><a class="store-listing-link" href="classifieds.html#beef" aria-label="Browse beef classifieds: 1/2 Wagyu Beef Share"><article class="store-listing beef-listing"><div class="store-card-media"><img src="assets/classifieds/beef-01.webp" alt="Wagyu beef share" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$1,750<small> / half</small></div><p>1/2 Wagyu Beef Share</p><small class="store-location">⌖ Waco, TX</small><div class="store-card-footer"><strong>Example Beef Farm 01</strong><b>2 halves</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#beef" aria-label="Browse beef classifieds: Everyday Value · 14 lb Box"><article class="store-listing beef-listing"><div class="store-card-media"><img src="assets/classifieds/beef-02.webp" alt="Wagyu steak box" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$135<small> / bundle</small></div><p>Everyday Value · 14 lb Box</p><small class="store-location">⌖ Ivanhoe, TX</small><div class="store-card-footer"><strong>Example Beef Farm 02</strong><b>4 bundles</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#beef" aria-label="Browse beef classifieds: Ground Wagyu Beef"><article class="store-listing beef-listing"><div class="store-card-media"><img src="assets/classifieds/beef-04.webp" alt="Ground Wagyu beef" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$6<small> / lb</small></div><p>Ground Wagyu Beef</p><small class="store-location">⌖ Georgetown, TX</small><div class="store-card-footer"><strong>Example Beef Farm 03</strong><b>1 lb packs</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#beef" aria-label="Browse beef classifieds: 1/4 Wagyu Beef Share"><article class="store-listing beef-listing"><div class="store-card-media"><img src="assets/classifieds/beef-01.webp" alt="Wagyu beef share" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$1,850<small> / quarter</small></div><p>1/4 Wagyu Beef Share</p><small class="store-location">⌖ Brenham, TX</small><div class="store-card-footer"><strong>Example Beef Farm 04</strong><b>3 quarters</b></div></div></article></a></div></div><div class="store-category"><div class="store-category-head"><h3>Genetics</h3><a href="classifieds.html#genetics">See all <span aria-hidden="true">→</span></a></div><div class="store-listings"><a class="store-listing-link" href="classifieds.html#genetics" aria-label="Browse genetics classifieds: Fullblood Wagyu Sire · Semen"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/genetics-dna.webp" alt="Wagyu genetics samples preserved in a cryogenic tank" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$125<small> / straw</small></div><p>Fullblood Wagyu Sire · Semen</p><small class="store-location">⌖ Weatherford, TX</small><div class="store-card-footer"><strong>Example Genetics 01</strong><b>24 straws</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#genetics" aria-label="Browse genetics classifieds: Elite Maternal Line · Embryos"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/genetics-dna.webp" alt="Wagyu genetics samples preserved in a cryogenic tank" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$750<small> / embryo</small></div><p>Elite Maternal Line · Embryos</p><small class="store-location">⌖ Red Rock, TX</small><div class="store-card-footer"><strong>Example Genetics 02</strong><b>8 embryos</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#genetics" aria-label="Browse genetics classifieds: Breeding Starter Package"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/genetics-dna.webp" alt="Wagyu genetics samples preserved in a cryogenic tank" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$2,400<small> / package</small></div><p>Breeding Starter Package</p><small class="store-location">⌖ Salado, TX</small><div class="store-card-footer"><strong>Example Genetics 03</strong><b>6 units</b></div></div></article></a><a class="store-listing-link" href="classifieds.html#genetics" aria-label="Browse genetics classifieds: Black Wagyu Sire · Semen"><article class="store-listing"><div class="store-card-media"><img src="assets/classifieds/genetics-dna.webp" alt="Wagyu genetics samples preserved in a cryogenic tank" loading="lazy" decoding="async"><span class="store-sample">Sample</span><span class="store-new">New</span><b class="store-twa-mark"><img src="assets/twa-texas-logo.png" alt="TWA"></b></div><div class="store-card-body"><div class="store-price">$95<small> / straw</small></div><p>Black Wagyu Sire · Semen</p><small class="store-location">⌖ Keller, TX</small><div class="store-card-footer"><strong>Example Genetics 04</strong><b>18 straws</b></div></div></article></a></div></div><div class="storefront-actions"><a class="store-search" href="classifieds.html">Search Registered TWA Classifieds <span aria-hidden="true">→</span></a></div><div class="store-powered">Classifieds powered by <a href="https://herdyard.com/" target="_blank" rel="noopener noreferrer">HerdYard.com</a>, a TWA partner</div></div></section>
+    <section class="section tools" id="learn">
+      <div class="container">
+        <div class="section-head center"><div class="eyebrow">Tools for the journey</div><h2>More ways to learn, share, and find your next connection.</h2><p class="section-intro">Whether you are building a herd, looking for a supplier, or learning what makes Wagyu distinct, start with the people and resources of TWA.</p></div>
+        <div class="tool-grid">
+          <article class="tool-card"><div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 42h48M13 42V30l7-8 8 8v12m-15-12h15M11 49h42M17 49v-7m11 7v-7m11 7v-7m11 7v-7M31 21c7-7 15-10 25-10"/><path d="M4 20c7-5 14-7 22-7"/></svg></div><h3>Find a member</h3><p>Explore the TWA directory to connect with producers, businesses, and Wagyu professionals.</p><a class="text-link" href="member-directory.html">Open member directory <span>&gt;</span></a></article>
+          <article class="tool-card"><div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M10 25 48 13v26L10 28zM48 20l8-5v22l-8-4M18 31l5 19h10l-6-16M55 12l4-4m-2 20h6m-8 12 4 4"/><path d="M9 25 5 24v7l5 1"/></svg></div><h3>Promote your operation</h3><p>See cattle and related listings shared through the association’s classified advertising system.</p><a class="text-link" href="classifieds.html">View classifieds <span>&gt;</span></a></article>
+          <article class="tool-card"><div class="tool-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 15c9-3 17-1 24 5 7-6 15-8 24-5v34c-9-3-17-1-24 5-7-6-15-8-24-5zM32 20v34M14 24c5-1 9 0 13 2m-13 6c5-1 9 0 13 2m24-10c-5-1-9 0-13 2m13 6c-5-1-9 0-13 2"/></svg></div><h3>Build your Wagyu knowledge</h3><p>Follow Wagyu’s origins, history, bloodlines, and defining traits in a visual, easy-to-read guide.</p><a class="text-link" href="wagyu-story.html">Explore the Wagyu story <span>&gt;</span></a></article>
+        </div>
+      </div>
+    </section>
+    <section class="section events" id="events">
+      <div class="container event-home">
+        <div class="event-home-head"><div class="eyebrow">Gather, learn, and do business</div><h2>Some of the best connections happen in person.</h2><p>TWA gatherings bring the Wagyu community together around cattle, conversation, and the future of the breed.</p></div>
+        <div class="event-agenda" aria-label="Upcoming TWA events">
+          <a class="agenda-row" href="events.html#connection"><span class="agenda-date"><b>17</b><small>APR<br>2027</small></span><span class="agenda-details"><small class="agenda-type">PRODUCER GATHERING</small><strong>Producer Connection Day</strong><small>Brazos County Expo · Bryan, Texas · Saturday, 9:00 AM–4:00 PM</small></span><span class="agenda-arrow" aria-hidden="true">→</span></a>
+          <a class="agenda-row" href="events.html#sale"><span class="agenda-date"><b>12</b><small>JUN<br>2027</small></span><span class="agenda-details"><small class="agenda-type">SALE &amp; NETWORKING</small><strong>Wagyu Sale &amp; Networking Reception</strong><small>Barrow Brewing Event Lawn · Salado, Texas · Saturday, 10:00 AM–7:00 PM</small></span><span class="agenda-arrow" aria-hidden="true">→</span></a>
+        </div>
+        <a class="btn navy" href="events.html">See all TWA events &amp; sales <span aria-hidden="true">&gt;</span></a>
+      </div>
+    </section>
+    <section class="section membership" id="membership">
+      <div class="container">
+        <div class="section-head center"><div class="eyebrow">Make your next connection count</div><h2>There’s a place for you in Texas Wagyu.</h2><p class="section-intro">TWA offers membership paths for producers and supporters of the Wagyu breed. Choose the fit that reflects how you want to take part.</p></div>
+        <div class="plans">
+          <article class="plan"><h3>Associate</h3><div class="price">$150 <small>/ year</small></div><p>For supporters of Wagyu who do not own Wagyu cattle. Includes member newsletter and access to in-person events.</p><a class="btn light" href="membership-checkout.html?plan=associate">Join TWA</a></article>
+          <article class="plan featured"><h3>Preferred</h3><div class="price">$150 <small>/ year</small></div><p>For Wagyu cattle producers, with voting privileges, member-only resources, classifieds, and newsletter access.</p><a class="btn" href="membership-checkout.html?plan=preferred">Join TWA</a></article>
+          <article class="plan"><h3>Preferred Plus</h3><div class="price">$433 <small>/ year</small></div><p>Preferred membership with an additional Australian Wagyu Association membership.</p><a class="btn light" href="membership-checkout.html?plan=preferred-plus">Join TWA</a></article>
+          <article class="plan"><h3>Lifetime</h3><div class="price">$1,500 <small>one time</small></div><p>Lifetime membership for Wagyu cattle producers, with special member recognition.</p><a class="btn light" href="membership-checkout.html?plan=lifetime">Join TWA</a></article>
+        </div>
+        <p class="member-footnote">Rates shown are the current TWA rates for memberships through June 30, 2027, as listed by the association. Confirm details with TWA before joining.</p>
+      </div>
+    </section>
+    <section class="contact" id="contact"><div class="contact-box"><div><div class="eyebrow">Let’s talk Wagyu</div><h2>Questions about membership or TWA?</h2><p>Reach out to the association and a board member will be in touch.</p></div><div class="contact-info"><small>Email the association</small><a href="mailto:info@texaswagyuassociation.org">info@texaswagyuassociation.org</a><small>Call the TWA office</small><a href="tel:+18172008555">(817) 200-8555</a></div></div></section>
+  </main>
+  <footer><div class="footer-main"><div><div class="footer-brand"><span class="brand-mark"><img src="assets/twa-texas-logo.png" alt=""></span><span><strong>Texas Wagyu Association</strong><small>Connect · Promote · Grow</small></span></div><p class="footer-copy">A community for Wagyu producers and the people who help the breed thrive.</p></div><div><h4>Explore</h4><div class="footer-links"><a href="#about">About TWA</a><a href="#benefits">Member benefits</a><a href="#events">Events</a><a href="#learn">Education &amp; resources</a></div></div><div><h4>Get connected</h4><div class="footer-links"><a href="#membership">Membership</a><a href="member-login.html">Member login</a><a href="member-directory.html">Member directory</a><a href="classifieds.html">Classifieds</a><a href="admin-login.html">Admin login</a><a href="#contact">Contact TWA</a></div></div></div><div class="copyright"><span>© 2026 Texas Wagyu Association</span><span>Raising Wagyu excellence since 2009.</span></div></footer>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const panel=document.querySelector('.mobile-panel');toggle.addEventListener('click',()=>{const open=panel.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');toggle.textContent=open?'×':'☰'});panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{panel.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');toggle.textContent='☰'}));
+  </script>
+</body>
+</html>
