@@ -128,6 +128,7 @@
     const verb={join:'Join',return:'Rejoin',renew:'Renew'}[mode];
     $('continue').textContent=verb+' for '+money(dues)+(hy?' + Herd Yard':'')+' →';$('status').textContent='';
   }
+  if(params.get('email'))$('lk-email').value=params.get('email');
   document.querySelectorAll('input[name="mode"]').forEach(r=>r.addEventListener('change',()=>{mode=r.value;update()}));
   $('hy-toggle').addEventListener('change',update);document.querySelectorAll('input[name="billing"]').forEach(r=>r.addEventListener('change',update));
   $('continue').addEventListener('click',()=>{$('status').textContent='This checkout is a preview. Payment for '+money(PR.planPrice(plan,years))+' will be taken through Stripe once it is connected. Nothing was charged.'});
